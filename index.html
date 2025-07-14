@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,22 +10,23 @@
   <h1>Malla Curricular Interactiva</h1>
   <div class="malla">
     <div class="semestre"><h2>1° Semestre</h2>
-  <div class="materia " id="ADMI010"  onclick="completar(this)">Administración</div>
-  <div class="materia " id="ADMI023"  onclick="completar(this)">Taller de TICs</div>
-  <div class="materia " id="ADMI030"  onclick="completar(this)">Habilidades Relacionales I</div>
-  <div class="materia " id="CIDI026"  onclick="completar(this)">Expresión oral y escrita</div>
-  <div class="materia " id="CIDI028"  onclick="completar(this)">Introducción al inglés</div>
-  <div class="materia " id="IECO030"  onclick="completar(this)">Entorno económico social</div>
-  <div class="materia " id="MATM024"  onclick="completar(this)">Álgebra</div>
-</div>
-<div class="semestre"><h2>2° Semestre</h2>
-  <div class="materia " id="ADMI020"  onclick="completar(this)">Contabilidad introductoria</div>
-  <div class="materia bloqueada" id="ADMI045" data-requiere="Administración" onclick="completar(this)">Taller de emprendimiento</div>
-  <div class="materia bloqueada" id="ADMI070" data-requiere="Administración" data-requiere="Habilidades Relacionales I" onclick="completar(this)">Administración para la toma de decisiones</div>
-  <div class="materia bloqueada" id="CIDI044" data-requiere="Introducción al inglés" onclick="completar(this)">Comunicación en inglés I</div>
-  <div class="materia " id="DYRE070"  onclick="completar(this)">Educación física y salud</div>
-  <div class="materia bloqueada" id="IECO041" data-requiere="Entorno económico social" onclick="completar(this)">Introducción a la economía</div>
-  <div class="materia bloqueada" id="MATM044" data-requiere="Álgebra" onclick="completar(this)">Cálculo I</div>
+      <div class="materia " id="ADMI010" onclick="completar(this)">Administración</div>
+      <div class="materia " id="ADMI023" onclick="completar(this)">Taller de TICs</div>
+      <div class="materia " id="ADMI030" onclick="completar(this)">Habilidades Relacionales I</div>
+      <div class="materia " id="CIDI026" onclick="completar(this)">Expresión oral y escrita</div>
+      <div class="materia " id="CIDI028" onclick="completar(this)">Introducción al inglés</div>
+      <div class="materia " id="IECO030" onclick="completar(this)">Entorno económico social</div>
+      <div class="materia " id="MATM024" onclick="completar(this)">Álgebra</div>
+    </div>
+    <div class="semestre"><h2>2° Semestre</h2>
+      <div class="materia " id="ADMI020" onclick="completar(this)">Contabilidad introductoria</div>
+      <div class="materia bloqueada" id="ADMI045" data-requiere="ADMI010" onclick="completar(this)">Taller de emprendimiento</div>
+      <div class="materia bloqueada" id="ADMI070" data-requiere="ADMI010,ADMI030" onclick="completar(this)">Administración para la toma de decisiones</div>
+      <div class="materia bloqueada" id="CIDI044" data-requiere="CIDI028" onclick="completar(this)">Comunicación en inglés I</div>
+      <div class="materia " id="DYRE070" onclick="completar(this)">Educación física y salud</div>
+      <div class="materia bloqueada" id="IECO041" data-requiere="IECO030" onclick="completar(this)">Introducción a la economía</div>
+      <div class="materia bloqueada" id="MATM044" data-requiere="MATM024" onclick="completar(this)">Cálculo I</div>
+    </div>
 </div>
 <div class="semestre"><h2>3° Semestre</h2>
   <div class="materia " id="ADMI040"  onclick="completar(this)">Contabilidad financiera</div>
